@@ -1,1 +1,1 @@
-# negociacao-de-mercadorias.
+# negociação de mercadorias.
