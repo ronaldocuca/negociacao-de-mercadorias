@@ -13,5 +13,3 @@ function conecta()
 	$conexao = pg_connect("host={$host} port={$port} dbname={$banco} user={$usuario} password={$senha}");
 	return $conexao;
 }
-
-conecta();
