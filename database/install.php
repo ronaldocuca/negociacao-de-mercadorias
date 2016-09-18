@@ -10,7 +10,7 @@ if ($conexao)
   				codigo varchar(10) NOT NULL PRIMARY KEY,
   				nome varchar(255) NOT NULL,
   				tipo varchar(50) NOT NULL,
-  				quantidade integer(10) NOT NULL,
+  				quantidade integer NOT NULL,
   				preco decimal(10,2) NOT NULL,
   				tipo_negocio varchar(10) DEFAULT NULL
   			)";
