@@ -1,18 +1,16 @@
-			 </div>
+			</section>
+			<!-- Rodapé -->
 			<footer>
 				<div class="container">
 					<hr>
-					<p class="text-center">2016</p>
+					<p class="text-center">2016 - Sistema - Negociação de Mercadorias</p>
 				</div>
 			</footer>
+			<!-- include JS -->
 			<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 	        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
-	
-	        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-	        <script>
-	            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-	            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-	        </script>
-	        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+	        <script src="js/jquery-validation-1.15.0/jquery.validate.js"></script>
+	        <script src="js/bootstrap.js" type="text/javascript"></script>
+	        <script src="js/script.js" type="text/javascript"></script>
 	    </body>
 	</html>	
