@@ -105,9 +105,9 @@ function listaNegociacoes()
 	$negociacoes = array();
 
 	$query = "SELECT * FROM negociacao_mercadorias";
-	$resultado = mysqli_query($conexao,$query);
+	$resultado = pg_query($conexao,$query);
 
-	while ($negociacao = mysqli_fetch_assoc($resultado)) 
+	while ($negociacao = pg_fetch_assoc($resultado)) 
 	{
 		array_push($negociacoes, $negociacao);
 	}
