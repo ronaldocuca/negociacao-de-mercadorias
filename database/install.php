@@ -32,6 +32,6 @@ if ($conexao)
   	}	
   	else 
   	{
-  		echo "Erro durante a instalacao!";
+  		echo "A tabela negociacao_mercadorias já existe ou houve um erro durante a instalacao!";
   	}
 }

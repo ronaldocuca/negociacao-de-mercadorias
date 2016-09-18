@@ -45,7 +45,7 @@ function adicionaNegociacao($values)
 					 {$preco},
 					'{$tipo_negocio}'
 				)";
-		$resultado = mysqli_query($conexao,$query);
+		$resultado = pg_query($conexao,$query);
 		return $resultado;
 	}
 }
@@ -57,8 +57,8 @@ function buscaNegociacao($codigo)
 
 	$query="SELECT * FROM negociacao_mercadorias 
 			WHERE codigo='{$codigo}'";
-	$resultado = mysqli_query($conexao,$query);
-	$negociacao = mysqli_fetch_assoc($resultado);
+	$resultado = pg_query($conexao,$query);
+	$negociacao = pg_fetch_assoc($resultado);
 	
 	return $negociacao;
 }
@@ -85,7 +85,7 @@ function alteraNegociacao($values)
 				tipo_negocio = '{$tipo_negocio}'
 			WHERE codigo ='{$codigo}'";
 
-	$resultado = mysqli_query($conexao,$query);
+	$resultado = pg_query($conexao,$query);
 	return $resultado;
 }
 
@@ -94,7 +94,7 @@ function excluiNegociao($codigo)
 {
 	$conexao = conecta();
 	$query = "DELETE FROM negociacao_mercadorias WHERE codigo='{$codigo}'";
-	$resultado = mysqli_query($conexao,$query);
+	$resultado = pg_query($conexao,$query);
 	return $resultado;
 }
 
